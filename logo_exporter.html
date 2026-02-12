@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Logo Exporter</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        canvas {
+            border: 1px solid #666;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #66fcf1;
+            color: #0b0c10;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Logo Export</h1>
+    <p>Loading your logo and converting to High-Quality JPG...</p>
+    <p>Click the button below if download doesn't start automatically.</p>
+    <a id="download-link" class="btn">Download JPG Logo</a>
+    <br>
+
+    <canvas id="canvas" width="2000" height="640"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // 1. Fill background (JPG doesn't support transparency)
+        ctx.fillStyle = "#0b0c10";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // 2. Load SVG
+        const img = new Image();
+        img.src = 'img/logo.svg';
+
+        img.onload = function () {
+            // 3. Draw Image scaled up for quality
+            // Maintain aspect ratio: SVG is 200x64, Canvas is 2000x640. Perfect 10x scale.
+            ctx.drawImage(img, 0, 0, 2000, 640);
+
+            // 4. Convert to JPG
+            const jpgUrl = canvas.toDataURL('image/jpeg', 0.95); // 0.95 Quality
+
+            // 5. Setup Download
+            const link = document.getElementById('download-link');
+            link.href = jpgUrl;
+            link.download = 'web_style_logo_hq.jpg';
+
+            // 6. Auto-click
+            link.click();
+
+            // Update text
+            document.querySelector('p').innerText = "Done! Check your downloads folder.";
+        };
+
+        img.onerror = function () {
+            document.querySelector('p').innerText = "Error loading logo.svg. Make sure it's in the same folder.";
+        };
+    </script>
+</body>
+
+</html>

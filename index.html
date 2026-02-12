@@ -7,7 +7,7 @@
     <title>Modernit Verkkosivut | Web Style TMI</title>
     <meta name="description"
         content="Modernit verkkosivut, jotka kääntävät kävijät asiakkaiksi. Uudet sivut, uudistukset ja ylläpito.">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
     <header class="header">
         <div class="container header-container">
             <a href="#" class="logo">
-                <img src="logo.svg" alt="Web Style TMI" width="150">
+                <img src="img/logo.jpg" alt="Web Style TMI" width="150">
             </a>
             <button class="mobile-menu-btn" aria-label="Avaa valikko">
                 <span class="bar"></span>
@@ -188,8 +188,8 @@
                 <h2 class="section-title">Ota yhteyttä</h2>
                 <p class="contact-text">Haluatko uudet kotisivut tai uudistaa vanhat? Jätä viesti, niin palaan asiaan
                     pian.</p>
-                <form class="contact-form" action="#" method="POST"
-                    onsubmit="event.preventDefault(); alert('Kiitos viestistäsi! Tämä on demo-lomake.');">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="6bddd95c-4cd9-46ce-b673-fdbd4456b3eb">
                     <div class="form-group">
                         <label for="name">Nimi</label>
                         <input type="text" id="name" name="name" required placeholder="Etu- ja sukunimi">
@@ -212,7 +212,7 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-logo">
-                <img src="logo.svg" alt="Web Style TMI" width="120">
+                <img src="img/logo.jpg" alt="Web Style TMI" width="120">
             </div>
             <div class="social-links">
                 <a href="https://github.com/webstyletmi" target="_blank" aria-label="GitHub">GitHub</a>
