@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modernit Verkkosivut | Web Style TMI</title>
+    <meta name="description"
+        content="Modernit verkkosivut, jotka kääntävät kävijät asiakkaiksi. Uudet sivut, uudistukset ja ylläpito.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="logo.svg" alt="Web Style TMI" width="150">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Avaa valikko">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#palvelut" class="nav-link">Palvelut</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#prosessi" class="nav-link">Prosessi</a></li>
+                    <li><a href="#yhteystiedot" class="btn btn-primary nav-cta">Ota yhteyttä</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section fade-in-section">
+            <div class="container hero-content">
+                <h1 class="hero-title">Modernit verkkosivut, jotka kääntävät kävijät asiakkaiksi.</h1>
+                <p class="hero-subtitle">Mitä teet? Kenelle teet? Miten otan yhteyttä? Vastaan näihin kysymyksiin
+                    sivustollasi alle 5 sekunnissa.</p>
+                <div class="hero-cta-wrapper">
+                    <a href="#yhteystiedot" class="btn btn-primary btn-large">Pyydä ilmainen arvio</a>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <section id="about" class="section about fade-in-section">
+            <div class="container about-container">
+                <div class="about-content">
+                    <h2 class="section-title">Kuka olen?</h2>
+                    <h3 class="about-role">Full Stack Developer & Robotiikka-insinööri</h3>
+                    <p>En ole vain "kotisivujen tekijä". Olen teknologia-alan ammattilainen, joka ymmärtää syvällisesti,
+                        miten digitaaliset järjestelmät rakennetaan – palvelimista käyttöliittymiin.</p>
+                    <p>Yhdistän insinöörin tarkkuuden ja visuaalisen silmän luodakseni verkkopalveluita, jotka eivät
+                        vain näytä hyvältä, vaan toimivat kuin ajatus.</p>
+
+                    <div class="tech-stack">
+                        <h4>Osaaminen & Teknologiat</h4>
+                        <div class="tech-grid">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">AWS</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <section id="palvelut" class="section services fade-in-section">
+            <div class="container">
+                <h2 class="section-title">Palvelut</h2>
+                <div class="grid services-grid">
+                    <div class="card service-card">
+                        <h3>Uudet verkkosivut</h3>
+                        <p>Räätälöidyt, modernit ja nopeat verkkosivut, jotka on suunniteltu kasvattamaan
+                            liiketoimintaasi.</p>
+                    </div>
+                    <div class="card service-card">
+                        <h3>Sivustouudistukset</h3>
+                        <p>Päivitä vanhat sivusi nykyaikaan. Parempi käytettävyys, nopeus ja mobiilioptimointi.</p>
+                    </div>
+                    <div class="card service-card">
+                        <h3>Ylläpito & Tuki</h3>
+                        <p>Huoleton ylläpito. Varmistan, että sivustosi on aina turvallinen ja ajan tasalla.</p>
+                    </div>
+                </div>
+                <div class="pricing-badge">
+                    <p>Hinnat alkaen <strong>499€</strong> &ndash; <a href="#yhteystiedot"
+                            style="color: var(--accent-color); text-decoration: underline;">Pyydä tarjous</a></p>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <section id="portfolio" class="section portfolio fade-in-section">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">Valittuja töitä ja konsepteja.</p>
+                <div class="grid portfolio-grid">
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+                            alt="NaapuriSapuska" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3>NaapuriSapuska</h3>
+                            <p>Ruuanjakoalusta, joka vähentää hävikkiä. Reaaliaikainen kartta ja viestintä.</p>
+                            <a href="https://webstyletmi.github.io/naapurisapuska/" target="_blank"
+                                class="btn-link">Tutustu projektiin &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80"
+                            alt="Sido Taxi Platform" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3>Sido Taxi Platform</h3>
+                            <p>Kyytipalvelualusta. Välitön tilaus, kuljettajan seuranta ja turvalliset maksut.</p>
+                            <a href="https://sido.fi/fi/index.html" target="_blank" class="btn-link">Tutustu projektiin
+                                &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"
+                            alt="Rakennustekniikka Rahimi" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3>Rakennustekniikka Rahimi</h3>
+                            <p>Nopea ja responsiivinen yrityssivu rakennusinsinööritoimistolle.</p>
+                            <a href="https://rakennustekniikkarahimi.fi/" target="_blank" class="btn-link">Tutustu
+                                projektiin &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <img src="https://www.tierpoint.com/wp-content/uploads/2023/05/Private-Cloud-Architecture-A-Complete-Overview_blog.png"
+                            alt="Private Cloud" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3>Self-Hosted Private Cloud</h3>
+                            <p>Turvallinen ja kustannustehokas yksityinen pilvi-infrastruktuuri.</p>
+                            <a href="http://cloud.sido.fi/" target="_blank" class="btn-link">Tutustu projektiin
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <section id="prosessi" class="section process fade-in-section">
+            <div class="container">
+                <h2 class="section-title">Miten projekti etenee?</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Suunnittelu</h3>
+                        <p>Määrittelemme tavoitteet ja suunnittelemme sivuston rakenteen ja ulkoasun.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Rakennus</h3>
+                        <p>Koodaan sivuston valmiiksi varmistaen nopeuden ja toimivuuden kaikilla laitteilla.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Julkaisu</h3>
+                        <p>Käymme sivuston läpi, teemme tarvittavat viilaukset ja julkaisemme sen maailmalle.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <section id="yhteystiedot" class="section contact fade-in-section">
+            <div class="container contact-container">
+                <h2 class="section-title">Ota yhteyttä</h2>
+                <p class="contact-text">Haluatko uudet kotisivut tai uudistaa vanhat? Jätä viesti, niin palaan asiaan
+                    pian.</p>
+                <form class="contact-form" action="#" method="POST"
+                    onsubmit="event.preventDefault(); alert('Kiitos viestistäsi! Tämä on demo-lomake.');">
+                    <div class="form-group">
+                        <label for="name">Nimi</label>
+                        <input type="text" id="name" name="name" required placeholder="Etu- ja sukunimi">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Sähköposti</label>
+                        <input type="email" id="email" name="email" required placeholder="malli@esimerkki.fi">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Viesti</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Kerro lyhyesti tarpeistasi..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Lähetä viesti</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="logo.svg" alt="Web Style TMI" width="120">
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/webstyletmi" target="_blank" aria-label="GitHub">GitHub</a>
+                <a href="#" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+            <p>&copy; 2026 Web Style TMI. Kaikki oikeudet pidätetään.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
